@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Calistoga&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.home {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    box-shadow: 0px 0px 50px #0000005a;
+    /* margin-top: 50px; */
+}
+
+.homeContent {
+    z-index: 100;
+    background: #191919;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    transition: .2s;
+}
+
+.homeContent:hover {
+    transform: scale(1.2);
+    border-radius: 30px;
+}
+
+.homeContent:hover .welcomeMessage,
+.homeContent:hover .descriptionMessage,
+.homeContent:hover .homeButton {
+    transform: translateX(50px);
+}
+
+.welcomeMessage {
+    font-family: "Bungee", sans-serif;
+    padding: 0px 150px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #c91818;
+    transition: .3s;
+}
+
+.descriptionMessage {
+    padding: 0px 150px;
+    line-height: 30px;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.homeButton {
+    margin: 0px 150px;
+    border: 2px solid #c91818;
+    color: #c91818;
+    text-align: center;
+    padding: 15px 40px;
+    width: 250px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.homeButton:hover {
+    background: #c91818;
+    color: #fff;
+}
+
+
+.homeImg {
+    background: #444;
+    height: 100%;
+    width: 40%;
+}
+
+.cardsHub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 200px;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.card {
+    width: 320px;
+    height: 600px;
+    border-radius: 20px;
+    background: #212121;
+    position: relative;
+    transition: 0.2s ease-out;
+    overflow: visible;
+    box-shadow: 5px 5px 30px #191919,
+    -5px -5px 30px #2c2a2a;
+}
+
+.detailsHub {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+}
+
+.card-image {
+    border-radius: 20px 20px 0px 0px;
+    height: 40%;
+    width: 100%;
+    background: #444;
+    transition: .3s;
+}
+
+.card:hover .detailsHub .card-image  {
+    transform: scale(1.2) translateY(-18px);
+}
+
+.card-details {
+    color: black;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+}
+
+.card-button {
+    transform: translate(-50%, 125%);
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    background-color: #c91818;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+.card-button:hover {
+    border-radius: 30px;
+    background-color: #c7c7c7;
+    color: #c91818;
+    border: 1px solid #c91818;
+}
+
+.text-body {
+    color: rgb(167, 167, 167);
+    padding: 0px 30px;
+    line-height: 25px;
+    font-size: 15px;
+    height: 65%;
+    /* text-align: justify; */
+    overflow: auto;
+}
+
+.text-title {
+    color: #c91818;
+    font-size: 18px;
+    font-family: "Bungee", sans-serif;
+    text-align: center;
+    height: 40px;
+    padding: 0px 10px;
+    text-shadow:
+        -0.1px -0.1px 0 #000,
+        0.1px -0.1px 0 #000,
+        -0.1px 0.1px 0 #000,
+        0.1px 0.1px 0 #000;
+}
+
+.card:hover {
+    border-color: #c91818;
+    transform: scale(1.05);
+    /* box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25); */
+}
+
+.card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+.contactHub {
+    user-select: text;
+    width: 100%;
+    background: #191919;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    box-shadow: 0px 0px 50px #0000005a;
+    margin-top: 20px;
+}
+
+.contactContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding-left: 100px;
+}
+
+.contact {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.swiperImg{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+    color: #fff;
+    background: #ff0000 !important;
+    /* border: 1px solid #fff; */
+}
+
+.gpsIframe {
+    width: 600px;
+    height: 350px;
+    border: 0;
+    padding-left: 20px;
+}
+
+@media (orientation: portrait) {
+    .home {
+        height: 900px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .homeButton {
+        width: 150px;
+    }
+
+    .homeImg {
+        background: #444;
+        height: 100%;
+        width: 100%;
+    }
+
+    .homeContent {
+        height: 100%;
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    .welcomeMessage {
+        padding: 0px 50px;
+    }
+
+    .descriptionMessage {
+        padding: 0px 50px;
+    }
+
+    .homeButton {
+        margin: 0px 50px;
+        padding: 15px 40px;
+    }
+
+    .homeContent:hover {
+        transform: scale(1);
+        border-radius: 0px;
+    }
+
+    .homeContent:hover .welcomeMessage,
+    .homeContent:hover .descriptionMessage,
+    .homeContent:hover .homeButton {
+        transform: translateX(0px);
+    }
+
+    .cardsHub {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        padding: 10px 40px;
+    }
+
+    .card-button {
+        width: 70%;
+        opacity: 1;
+        transform: translate(-50%, 50%);
+
+    }
+
+    .contactHub {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 50px;
+        height: 500px;
+        /* padding: 20px; */
+    }
+
+    .contactContent {
+        flex-direction: column;
+        /* margin: 10px; */
+        margin-bottom: 140px;
+        gap: 50px;
+        padding-left: 0px;
+    }
+
+    .gpsIframe {
+        width: 100%;
+        height: 350px;
+        border: 0;
+        padding-left: 0px;
+        margin-bottom: 30px;
+    }
+
+    .contact {
+        width: 70%;
+    }
+}
