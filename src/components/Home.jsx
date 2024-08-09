@@ -11,6 +11,8 @@ import carrossel3 from '../assets/carrossel3.png';  // Adjust the path as necess
 import carrossel4 from '../assets/carrossel4.png';  // Adjust the path as necessary
 import carrossel5 from '../assets/carrossel5.png';  // Adjust the path as necessary
 import carrossel6 from '../assets/carrossel6.png';  // Adjust the path as necessary
+import carrossel7 from '../assets/carrossel7.png';  // Adjust the path as necessary
+import carrossel8 from '../assets/carrossel8.png';  // Adjust the path as necessary
 
 const Home = ({ HomeComponentRef, scrollToRef, ProductsComponentRef }) => {
     return (
@@ -37,6 +39,7 @@ const Home = ({ HomeComponentRef, scrollToRef, ProductsComponentRef }) => {
                         delay: 2500,
                         disableOnInteraction: false,
                     }}
+                    loop={true}
                     pagination={{
                         // dynamicBullets: true,
                         clickable: true,
@@ -50,6 +53,8 @@ const Home = ({ HomeComponentRef, scrollToRef, ProductsComponentRef }) => {
                     <SwiperSlide><img className="swiperImg" src={carrossel4}></img></SwiperSlide>
                     <SwiperSlide><img className="swiperImg" src={carrossel5}></img></SwiperSlide>
                     <SwiperSlide><img className="swiperImg" src={carrossel6}></img></SwiperSlide>
+                    <SwiperSlide><img className="swiperImg" src={carrossel7}></img></SwiperSlide>
+                    <SwiperSlide><img className="swiperImg" src={carrossel8}></img></SwiperSlide>
                 </Swiper>
             </div>
         </div>

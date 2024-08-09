@@ -36,7 +36,7 @@ function App() {
         </div>
       </div>
       <Home HomeComponentRef={HomeComponentRef} scrollToRef={scrollToRef} ProductsComponentRef={ProductsComponentRef} />
-      <div className='productsMode' ref={ProductsComponentRef}>Serviços Automotivos</div>
+      <div className='productsMode' ref={ProductsComponentRef}>Nossos Serviços</div>
       <Products />
       {/* <div className='productsMode' style={{ marginTop: '0px' }}>Serviços Residenciais</div>
       <ResidencialProducts /> */}
