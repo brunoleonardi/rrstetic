@@ -5,7 +5,7 @@ import Products from './components/Products';
 import ResidencialProducts from './components/ResidencialProducts';
 import Contact from './components/Contact';
 import { useRef } from 'react';
-import logo from './assets/logo.png';
+import logo from './assets/rrLogo.png';
 
 export const openWhatsapp = () => {
   window.open('https://wa.me/5511974041594', '_blank', 'noopener,noreferrer');

@@ -12,14 +12,14 @@ const Contact = ({ ContactComponentRef }) => {
             </iframe>
             <div className="contactContent">
                 <div className="contact">
-                    <strong style={{ marginBottom: '30px' }}>Funcionamento</strong>
-                    <div> Segunda a sexta, das 9h às 19h.</div>
-                    <div> Sábado, das 9h às 16h </div>
-                </div>
-                <div className="contact">
                     <strong style={{ marginBottom: '30px' }}>Fale Conosco</strong>
                     <div>(11) 97404-1594</div>
                     <div>R. Justino Cardoso da Silveira, 78a - Jardim Guapituba</div>
+                </div>
+                <div className="contact">
+                    <strong style={{ marginBottom: '30px' }}>Funcionamento</strong>
+                    <div> Segunda a sexta, das 9h às 19h.</div>
+                    <div> Sábado, das 9h às 16h </div>
                 </div>
             </div>
         </div>

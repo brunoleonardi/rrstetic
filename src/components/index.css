@@ -80,6 +80,15 @@
     gap: 50px;
 }
 
+.productsCarousel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
 .card {
     width: 320px;
     height: 600px;
@@ -89,7 +98,7 @@
     transition: 0.2s ease-out;
     overflow: visible;
     box-shadow: 5px 5px 30px #191919,
-    -5px -5px 30px #2c2a2a;
+        -5px -5px 30px #2c2a2a;
 }
 
 .detailsHub {
@@ -108,7 +117,7 @@
     transition: .3s;
 }
 
-.card:hover .detailsHub .card-image  {
+.card:hover .detailsHub .card-image {
     transform: scale(1.2) translateY(-18px);
 }
 
@@ -222,7 +231,7 @@
     color: #fff;
 }
 
-.swiperImg{
+.swiperImg {
     object-fit: cover;
     height: 100%;
     width: 100%;
